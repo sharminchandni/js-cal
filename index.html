@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <title>Calculator</title>
+  </head>
+  <body>
+    <style type="text/css">
+      form{
+        width: 400px;
+        margin: 0 auto;
+
+
+      }
+      input{
+        width: 100%;
+        padding: 10px 0;
+        border: 1px solid #fff;
+        background-color:#009688;
+        color:#fff;
+
+      }
+      button{
+        width: 25%;
+        float: left;
+        padding: 5px 0;
+        font-size: 16px;
+        background-color:#009688;
+        border: 1px solid #fff;
+        color:#fff;
+      }
+     
+
+    </style>
+
+    <form name="form">
+      <input type="text" name="display" id="display" readonly>
+
+      <button type="button" onclick="ClickClear()">C</button>
+      <button type="button" onclick="ClickSquareroot()">%</button>
+      <button type="button" onclick="Clickpercent()">√</button>
+      <button type="button" onclick="ClickZero()">0</button>
+
+      <button type="button" onclick="Clickdivid()">/</button>
+      <button type="button" onclick="ClickDecimal()">.</button>
+      <button type="button" onclick="ClickOne()">1</button>      
+      <button type="button" onclick="ClickTwo()">2</button>
+
+      <button type="button" onclick="ClickThree()">3</button>
+      <button type="button" onclick="ClickFour()">4</button>
+      <button type="button" onclick="ClickFive()">5</button>
+      <button type="button" onclick="ClickSix()">6</button> 
+
+      <button type="button" onclick="ClickSeven()">7</button>
+      <button type="button" onclick="ClickEight()">8</button>
+      <button type="button" onclick="ClickNine()">9</button>
+      <button type="button" onclick="ClickPlus()">+</button> 
+
+      <button type="button" onclick="ClickMinus()">-</button>
+      <button type="button" onclick="Clickmult()">*</button>
+      <button type="button" onclick="ClickParentheses()">( )</button>
+      <button type="button" onclick="ClickEqual()">=</button>
+
+
+
+    </form>
+
+    <script>
+      function ClickClear(){document.form.display.value ="";}
+      function Clickpercent(){document.form.display.value+="%";}
+      function ClickSquareroot(){document.form.display.value+="√";}
+      function Clickdivid(){document.form.display.value+="/";}
+      function ClickDecimal(){document.form.display.value+=".";}
+      function ClickZero(){document.form.display.value+="0";}
+
+
+
+      function ClickOne(){document.form.display.value+="1";}
+      function ClickTwo(){document.form.display.value+="2";}
+      function ClickThree(){document.form.display.value+="3";}
+      function ClickFour(){document.form.display.value+="4";}
+
+      function ClickFive(){document.form.display.value+="5";}
+      function ClickSix(){document.form.display.value+="6";}
+      function ClickSeven(){document.form.display.value+="7";}
+      function ClickEight(){document.form.display.value+="8";}
+
+      function ClickNine(){document.form.display.value+="9";}
+      function ClickPlus(){document.form.display.value+="+";}
+      function ClickMinus(){document.form.display.value+="-";}
+      function Clickmult(){document.form.display.value+="*";}
+
+      function ClickEqual(){document.form.display.value+="=";}
+      function ClickParentheses(){document.form.display.value+="( )";}
+    </script>
+
+  </body>
+</html>
